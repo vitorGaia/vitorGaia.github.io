@@ -1,4 +1,5 @@
 {
+  "homepage": "https://vitorGaia.github.io/vitorGaia.github.io/",
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "vite build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

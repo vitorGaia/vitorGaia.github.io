@@ -11,6 +11,7 @@
 }
 
 .projects-page-container h2 {
+  padding-top: 0.5rem;
   font-weight: 600;
   font-size: 1.3rem;
   color: var(--accent);
