@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.about-page-container h2 {
+.about-page-container > h2 {
   font-weight: 600;
   font-size: 1.3rem;
   color: var(--accent);
