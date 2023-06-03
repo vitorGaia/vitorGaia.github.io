@@ -1,0 +1,30 @@
+.home-btns-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  height: 80px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.home-btns-container a {
+  font-size: 1.1rem;
+  border: solid 2px var(--accent);
+  border-radius: 7px;
+  padding: 0.5rem;
+  height: 100%;
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.home-btns-container > :nth-child(2) {
+  background-color: var(--accent);
+  color: var(--base);
+}

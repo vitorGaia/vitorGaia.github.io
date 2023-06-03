@@ -1,0 +1,28 @@
+.contacts-bar {
+  /* border: solid 1px var(--accent); */
+  width: 164px;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  /* position: absolute; */
+  right: 6%;
+  top: 20%;
+}
+
+.contacts-bar i {
+  border: solid 1px var(--accent);
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0.3rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+/* .contacts-bar > :nth-child(1) {
+  background-color: var(--accent);
+  color: var(--base);
+  border: none;
+} */

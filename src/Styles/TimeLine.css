@@ -1,0 +1,110 @@
+.time-line-container {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  overflow: auto;
+  position: relative;
+  margin: 1rem;
+}
+
+.time-line-container::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: var(--font);
+  border-radius: 5px;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.container {
+  background-color: var(--card-color);
+  padding: 0.5rem;
+  position: relative;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  right: -35%;
+  background-color: var(--font);
+  border: 4px solid var(--accent);
+  top: 1.7rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 60%;
+}
+
+.left::before {
+  content: '';
+  height: 0;
+  position: absolute;
+  top: 25%;
+  width: 0;
+  z-index: 1;
+  right: -13px;
+  border: medium solid var(--font);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--font);
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 25%;
+  width: 0;
+  z-index: 1;
+  left: -13.5px;
+  border: medium solid var(--font);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--font) transparent transparent;
+}
+
+.right::after {
+  left: -34.5%;
+  top: 21%;
+}
+
+.left::after {
+  top: 22%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  background-color: transparent;
+  position: relative;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.content > h2 {
+  font-size: 1.1rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

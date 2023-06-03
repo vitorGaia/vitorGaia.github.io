@@ -1,0 +1,25 @@
+.back-to-start-container {
+  height: 150px;
+  width: 100%;
+  background-color: #01040ff6;
+  color: var(--font);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-to-start-container > a i {
+  border: solid 1px #01040f;
+  background-color: var(--accent);
+  border-radius: 50%;
+  padding: 0.3rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #01040ff6;
+}
+
+.back-to-start-container > span {
+  font-size: 0.7rem;
+}

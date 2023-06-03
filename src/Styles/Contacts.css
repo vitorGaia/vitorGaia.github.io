@@ -1,0 +1,80 @@
+.contacts-page-container {
+  background-color: var(--base);
+  color: var(--font);
+  padding-top: 54px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacts-page-container h2 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+.contacts-page-container p {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+
+.show-contact-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.contact-form {
+  background-color: var(--card-color);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.contact-form div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form div > input {
+  width: 7.5rem;
+  height: 34px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px var(--accent);
+}
+
+.contact-form > input {
+  height: 34px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px var(--accent);
+}
+
+.contact-form > textarea {
+  background-color: transparent;
+  height: 40%;
+  border: none;
+  border-bottom: solid 1px var(--accent);
+}
+
+.contact-form > button {
+  background-color: var(--accent);
+  height: 34px;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
