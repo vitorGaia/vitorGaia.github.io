@@ -10,8 +10,11 @@ function About() {
 
   useEffect(() => {
     if (toAbout) {
-      about.current.scrollIntoView({ behavior: 'smooth' });
-      setToAbout(false);
+      const test = setTimeout(() => {
+        about.current.scrollIntoView({ behavior: 'smooth' });
+        setToAbout(false);
+        clearTimeout(test);
+      }, 100);
     }
   }, [setToAbout, toAbout]);
 

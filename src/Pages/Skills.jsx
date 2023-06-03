@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef } from 'react';
 import ReactIconCloud from '../Components/ReactIconCloud';
-import '../Styles/Skills.css';
 import AppContext from '../Contexts/AppContext';
+import '../Styles/Skills.css';
 
 function Skills() {
   const { toSkills, setToSkills } = useContext(AppContext);
@@ -9,8 +9,11 @@ function Skills() {
 
   useEffect(() => {
     if (toSkills) {
-      skills.current.scrollIntoView({ behavior: 'smooth' });
-      setToSkills(false);
+      const test = setTimeout(() => {
+        skills.current.scrollIntoView({ behavior: 'smooth' });
+        setToSkills(false);
+        clearTimeout(test);
+      }, 100);
     }
   }, [setToSkills, toSkills]);
 

@@ -19,9 +19,9 @@ function Header() {
 
         <a href="#" onClick={ () => navigate('/')}>Principal</a>
 
-        <a href="/#skills" onClick={() => redirectTo('skills')}>Habilidades</a>
+        <a href="#" onClick={() => redirectTo('skills')}>Habilidades</a>
 
-        <a href='/#about' onClick={() => redirectTo('about')}>Sobre Mim</a>
+        <a href="#" onClick={() => redirectTo('about')}>Sobre Mim</a>
 
         <a href="#" onClick={ () => navigate('/projects')}>Projetos</a>
         
