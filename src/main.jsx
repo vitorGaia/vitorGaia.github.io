@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import AppProvider from './Contexts/AppProvider.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename='/vitorGaia.github.io'>
+  <BrowserRouter>
     <AppProvider>
       <App />
     </AppProvider>
