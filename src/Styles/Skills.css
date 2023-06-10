@@ -3,7 +3,7 @@
   width: 100vw;
   max-width: 100%;
   padding-top: 54px;
-  background-color: #01040ff6;
+  background-color: #060a17;
   color: var(--font);
   display: flex;
   flex-direction: column;
@@ -25,4 +25,8 @@
 
 .whats-icon {
   font-size: 10rem;
+}
+
+.area-2-skills {
+  visibility: hidden;
 }

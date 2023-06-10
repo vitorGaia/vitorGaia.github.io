@@ -2,8 +2,10 @@ import Home from './Pages/Home';
 import { Route, Routes } from 'react-router';
 import Projects from './Pages/Projects';
 import Contacts from './Pages/Contacts';
+import ScrollReveal from 'scrollreveal';
 
 function App() {
+  window.sr = ScrollReveal({ reset: true });
 
   return (
     <Routes>

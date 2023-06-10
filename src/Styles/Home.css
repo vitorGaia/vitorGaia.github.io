@@ -47,3 +47,7 @@
   font-weight: 600;
   font-size: 1rem;
 }
+
+.area-1-home {
+  visibility: hidden;
+}

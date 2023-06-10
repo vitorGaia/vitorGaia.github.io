@@ -5,14 +5,27 @@ import '../Styles/Home.css';
 import About from './About';
 import BackToStartBtn from '../Components/BackToStartBtn';
 import ContactsBar from '../Components/ContactsBar';
+import ScrollReveal from 'scrollreveal';
+import { useEffect } from 'react';
 
 function Home() {
+  useEffect(() => {
+    ScrollReveal().reveal('.area-1-home', {
+      duration: 1500,
+      rotate: {
+        x: 100,
+        y: 0,
+        z: 0
+      }
+    });
+  }, []);
+
   return (
     <>
     <main className='home-page-container' id='home-section'>
       <Header />
 
-      <div className='home-page-content-container'>
+      <div className='home-page-content-container area-1-home'>
 
         <div className='h1-container'>
           <ContactsBar position='absolute' />

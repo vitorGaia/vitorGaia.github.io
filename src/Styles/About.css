@@ -23,4 +23,8 @@
   padding: 0 1rem;
 }
 
+.area-3-about {
+  visibility: hidden;
+}
+
 /* https://www.w3schools.com/howto/howto_css_timeline.asp */
