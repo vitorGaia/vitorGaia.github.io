@@ -1,10 +1,23 @@
 import ContactsBar from '../Components/ContactsBar';
 import Header from '../Components/Header';
+import ScrollReveal from 'scrollreveal';
 import '../Styles/Contacts.css';
+import { useEffect } from 'react';
 
 function Contacts() {
+  useEffect(() => {
+    ScrollReveal().reveal('.area-5-contacts', {
+      duration: 1500,
+      rotate: {
+        x: 100,
+        y: 0,
+        z: 0
+      }
+    });
+  }, []);
+
   return (
-    <div className='contacts-page-container'>
+    <div className='contacts-page-container area-5-contacts'>
       <Header />
       
       <h2>Contatos</h2>

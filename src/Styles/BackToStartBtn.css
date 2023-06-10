@@ -1,7 +1,7 @@
 .back-to-start-container {
   height: 150px;
   width: 100%;
-  background-color: #01040ff6;
+  background-color: #060a17;
   color: var(--font);
   display: flex;
   flex-direction: column;
@@ -22,4 +22,8 @@
 
 .back-to-start-container > span {
   font-size: 0.7rem;
+}
+
+.area-6-backToStart {
+  visibility: hidden;
 }

@@ -4,10 +4,23 @@ import dataProjects from '../dataProjects';
 import CardProject from '../Components/CardProject';
 import '../Styles/Projects.css';
 import BackToStartBtn from '../Components/BackToStartBtn';
+import ScrollReveal from 'scrollreveal';
+import { useEffect } from 'react';
 
 function Projects() {
+  useEffect(() => {
+    ScrollReveal().reveal('.area-4-projects', {
+      duration: 1500,
+      rotate: {
+        x: 100,
+        y: 0,
+        z: 0
+      }
+    });
+  }, []);
+
   return (
-    <div className='projects-page-container' id='projects-section'>
+    <div className='projects-page-container area-4-projects' id='projects-section'>
       <Header />
 
       <h2>Meus Projetos</h2>

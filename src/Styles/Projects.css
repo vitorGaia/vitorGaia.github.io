@@ -29,3 +29,7 @@
   flex-direction: column;
   padding: 0 0.5rem;
 }
+
+.area-4-projects {
+  visibility: hidden;
+}

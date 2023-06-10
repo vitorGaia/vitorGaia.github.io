@@ -21,9 +21,10 @@
   flex-direction: column;
   top: 0;
   right: 0;
-  width: 45%;
+  width: 75%;
   height: 100vh;
   border-left: solid 1px var(--font);
+  gap: 1rem;
 }
 
 .close-menu-icon {

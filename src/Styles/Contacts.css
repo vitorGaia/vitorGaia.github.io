@@ -79,3 +79,7 @@
   font-weight: 600;
   font-size: 1.1rem;
 }
+
+.area-5-contacts {
+  visibility: hidden;
+}
