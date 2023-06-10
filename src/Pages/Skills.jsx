@@ -5,7 +5,7 @@ import ScrollReveal from 'scrollreveal';
 import '../Styles/Skills.css';
 
 function Skills() {
-  const { toSkills, setToSkills } = useContext(AppContext);
+  const { toSkills, setToSkills, scrollToElement } = useContext(AppContext);
   const skills = useRef(null);
 
   useEffect(() => {
@@ -20,14 +20,11 @@ function Skills() {
   }, []);
 
   useEffect(() => {
-    if (toSkills) {
-      const test = setTimeout(() => {
-        skills.current.scrollIntoView({ behavior: 'smooth' });
-        setToSkills(false);
-        clearTimeout(test);
-      }, 100);
+    if (location.pathname === '/' && toSkills) {
+      scrollToElement('skills');
     }
-  }, [setToSkills, toSkills]);
+    setToSkills(false);
+  }, [scrollToElement, setToSkills, toSkills]);
 
   return (
     <div className='skills-page-container area-2-skills' id='skills' ref={skills}>

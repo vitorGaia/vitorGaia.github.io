@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react';
 import '../Styles/Header.css';
 import AppContext from '../Contexts/AppContext';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const { navigate, redirectTo } = useContext(AppContext);
@@ -19,9 +20,9 @@ function Header() {
 
         <a href="#" onClick={ () => navigate('/')}>Principal</a>
 
-        <a href="#" onClick={() => redirectTo('skills')}>Habilidades</a>
+        <Link to={'/'} onClick={() => redirectTo('skills')}>Habilidades</Link>
 
-        <a href="#" onClick={() => redirectTo('about')}>Sobre Mim</a>
+        <Link to={'/'} onClick={() => redirectTo('about')}>Sobre Mim</Link>
 
         <a href="#" onClick={ () => navigate('/projects')}>Projetos</a>
         
