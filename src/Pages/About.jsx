@@ -6,7 +6,7 @@ import AppContext from '../Contexts/AppContext';
 
 function About() {
 
-  const { toAbout, setToAbout } = useContext(AppContext);
+  const { toAbout, setToAbout, scrollToElement } = useContext(AppContext);
   const about = useRef(null);
 
   useEffect(() => {
@@ -21,14 +21,11 @@ function About() {
   }, []);
 
   useEffect(() => {
-    if (toAbout) {
-      const test = setTimeout(() => {
-        about.current.scrollIntoView({ behavior: 'smooth' });
-        setToAbout(false);
-        clearTimeout(test);
-      }, 100);
+    if (location.pathname === '/' && toAbout) {
+      scrollToElement('about');
     }
-  }, [setToAbout, toAbout]);
+    setToAbout(false);
+  }, [scrollToElement, setToAbout, toAbout]);
 
   return (
     <div className="about-page-container area-3-about" id='about' ref={about}>
