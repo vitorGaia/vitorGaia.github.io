@@ -1,6 +1,6 @@
 import AppContext from './AppContext';
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function AppProvider(props) {
@@ -8,6 +8,7 @@ function AppProvider(props) {
   const navigate = useNavigate();
   const [toSkills, setToSkills] = useState(false);
   const [toAbout, setToAbout] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const redirectTo = (path) => {
     if (path === 'skills') {
@@ -29,6 +30,16 @@ function AppProvider(props) {
     });
   };
 
+  const handleResize = () => setScreenWidth(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const values = {
     navigate,
     toSkills,
@@ -36,7 +47,8 @@ function AppProvider(props) {
     setToSkills,
     setToAbout,
     redirectTo,
-    scrollToElement
+    scrollToElement,
+    screenWidth,
   };
 
   return (

@@ -1,22 +1,11 @@
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext } from 'react';
 import '../Styles/Header.css';
 import AppContext from '../Contexts/AppContext';
 import { Link } from 'react-router-dom';
 
 function Header() {
-  const { navigate, redirectTo } = useContext(AppContext);
+  const { navigate, redirectTo, screenWidth } = useContext(AppContext);
   const [sideBar, setSideBar] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-  const handleResize = () => setScreenWidth(window.innerWidth);
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   const style = { display: screenWidth < 1000 && !sideBar && 'none' };
 

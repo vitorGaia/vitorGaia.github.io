@@ -28,9 +28,11 @@ function Skills() {
 
   return (
     <div className='skills-page-container area-2-skills' id='skills' ref={skills}>
-      <h2>Habilidades Técnicas</h2>
+      <div className='skills-infos-container'>
+        <h2>Habilidades Técnicas</h2>
 
-      <p>Desenvolvimento inteligente de aplicações web robustas e auto-gerenciáveis. Crio soluções personalizadas e escaláveis para atender às suas necessidades específicas. Com expertise técnica e práticas de desenvolvimento de ponta.</p>
+        <p>Desenvolvimento inteligente de aplicações web robustas e auto-gerenciáveis. Crio soluções personalizadas e escaláveis para atender às suas necessidades específicas, com expertise técnica e práticas de desenvolvimento de ponta.</p>
+      </div>
 
       <ReactIconCloud />
     </div>

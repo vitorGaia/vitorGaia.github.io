@@ -3,3 +3,17 @@
   width: 85%;
   padding-top: 1.5rem;
 }
+
+@media (min-width: 1001px) {
+  .icon-cloud-container {
+    width: unset;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: unset;
+    padding: unset;
+    padding: 5rem;
+  }
+}

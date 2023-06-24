@@ -10,14 +10,20 @@
   align-items: center;
 }
 
-.skills-page-container h2 {
+.skills-infos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-infos-container h2 {
   font-weight: 600;
   font-size: 1.3rem;
   color: var(--accent);
   padding-top: 0.5rem;
 }
 
-.skills-page-container p {
+.skills-infos-container p {
   text-align: center;
   font-size: 0.8rem;
   padding: 0.5rem;
@@ -29,4 +35,27 @@
 
 .area-2-skills {
   visibility: hidden;
+}
+
+@media (min-width: 1001px) {
+  .skills-page-container {
+    padding-top: 64px;
+    flex-direction: row-reverse;
+  }
+
+  .skills-infos-container {
+    width: 50%;
+    height: 100%;
+    padding: 5rem 5rem 5rem 0;
+    gap: 2rem;
+  }
+
+  .skills-infos-container h2 {
+    font-size: 3rem;
+    padding-top: 1.5rem;
+  }
+
+  .skills-infos-container p {
+    font-size: 1.1rem;
+  }
 }

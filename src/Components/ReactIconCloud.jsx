@@ -6,7 +6,7 @@ import '../Styles/ReactIconCloud.css';
 function ReactIconCloud() {
   const tagCanvasOptions = {
     imageScale: 3,
-    initial: [0.5, -0.5],
+    initial: [0.2, -0.2],
     reverse: true,
     tooltip: "native",
     tooltipDelay: 0,
@@ -27,6 +27,11 @@ function ReactIconCloud() {
     'npm',
     'css3',
     'mysql',
+    'express',
+    'mocha',
+    'chai',
+    'typescript',
+    'nodedotjs'
   ];
 
   const iconTags = iconSlugs.map((slug) => ({
@@ -39,7 +44,7 @@ function ReactIconCloud() {
       <IconCloud
       key={v4()}
       id={"icon"}
-      minContrastRatio={1}
+      minContrastRatio={0}
       iconSize={40}
       backgroundHexColor={"#fff"}
       fallbackHexColor={"#000"}
