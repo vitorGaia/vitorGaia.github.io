@@ -3,7 +3,8 @@
 :root {
   --base: #01040f;
   --font: whitesmoke;
-  --accent: yellowgreen;
+  --accent2: yellowgreen;
+  --accent: #00C4FF;
   --card-color: rgba(128, 128, 128, 0.108);
 }
 

@@ -7,6 +7,7 @@ import BackToStartBtn from '../Components/BackToStartBtn';
 import ContactsBar from '../Components/ContactsBar';
 import ScrollReveal from 'scrollreveal';
 import { useEffect } from 'react';
+import homeBackground from '../Images/homeBackground.gif';
 
 function Home() {
   useEffect(() => {
@@ -38,6 +39,10 @@ function Home() {
         <p>Tenho 25 anos, moro em Belém PA, estudo engenharia de Software na Unifatecie e desenvolvimento web na Trybe.</p>
 
         <HomeBtns hubOrProjects='projects' />
+      </div>
+      
+      <div className='home-iamge-container'>
+        <img src={homeBackground} />
       </div>
     </main>
 

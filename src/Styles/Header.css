@@ -60,3 +60,34 @@
   font-size: 1.5rem;
   color: var(--font);
 }
+
+@media (min-width: 1001px) {
+  .header-container {
+    height: 64px;
+    padding: 0.5rem 7rem;
+  }
+
+  .header-container > a {
+    font-size: 2rem;
+  }
+
+  .header-container nav {
+    background-color: unset;
+    position: unset;
+    height: unset;
+    width: unset;
+    flex-direction: row;
+    border-left: unset;
+    gap: 3rem;
+  }
+
+  .header-container nav a {
+    padding: unset;
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+
+  .menu-icon, .close-menu-icon {
+    display: none;
+  }
+}
