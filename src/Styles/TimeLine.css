@@ -1,5 +1,6 @@
 .time-line-container {
   width: 100%;
+  max-width: 700px;
   height: 100%;
   padding: 1rem;
   overflow: auto;
@@ -65,7 +66,7 @@
 }
 
 .right::before {
-  content: " ";
+  content: '';
   height: 0;
   position: absolute;
   top: 25%;
@@ -108,4 +109,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 1001px) {
+  .time-line-container {
+    width: 50%;
+    height: 100%;
+    padding: 5rem 5rem 5rem 2.5rem;
+    margin: unset;
+  }
+
+  .time-line-container::after {
+    margin: 5rem 0;
+    left: 47%;
+  }
+
+  /* .container {
+    background-color: aquamarine;
+  } */
+
+  .container::after {
+    right: -29.5%;
+  }
+
+  .left::after {
+    right: -30.6%;
+  }
+
+  .right::after {
+    left: -29.5%;
+  }
+
+  .left::before {
+    right: -15%;
+  }
+
+  .right::before {
+    left: -15%;
+  }
 }

@@ -10,14 +10,20 @@
   align-items: center;
 }
 
-.about-page-container > h2 {
+.about-titles-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-titles-container > h2 {
   font-weight: 600;
   font-size: 1.3rem;
   color: var(--accent);
   padding-top: 0.5rem;
 }
 
-.about-page-container > p {
+.about-titles-container > p {
   text-align: justify;
   font-size: 0.8rem;
   padding: 0 1rem;
@@ -28,3 +34,28 @@
 }
 
 /* https://www.w3schools.com/howto/howto_css_timeline.asp */
+
+@media (min-width: 1001px) {
+  .about-page-container {
+    padding-top: 64px;
+    flex-direction: row;
+  }
+
+  .about-titles-container {
+    width: 50%;
+    height: 100%;
+    padding: 5rem 2.5rem 5rem 5rem;
+    gap: 2rem;
+  }
+
+  .about-titles-container > h2 {
+    font-size: 3rem;
+    padding-top: 1.5rem;
+  }
+
+  .about-titles-container > p {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 2;
+  }
+}
