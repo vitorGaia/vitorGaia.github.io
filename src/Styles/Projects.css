@@ -33,3 +33,22 @@
 .area-4-projects {
   visibility: hidden;
 }
+
+@media (min-width: 1001px) {
+  .show-project-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2.5rem;
+    gap: 1rem;
+  }
+
+  .projects-page-container h2 {
+    font-size: 2rem;
+  }
+
+  .projects-page-container > p {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+}

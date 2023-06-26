@@ -20,7 +20,7 @@ function Projects() {
   }, []);
 
   return (
-    <div className='projects-page-container area-4-projects' id='projects-section'>
+    <div className='projects-page-container area-4-projects' id='projects'>
       <Header />
 
       <h2>Meus Projetos</h2>
@@ -33,7 +33,7 @@ function Projects() {
         { dataProjects.map((project, index) => <CardProject key={`${project}${index}`} project={project} />) }
       </div>
 
-      <BackToStartBtn id='#projects-section' />
+      <BackToStartBtn id='projects' />
     </div>
   );
 }

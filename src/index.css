@@ -8,6 +8,16 @@
   --card-color: rgba(128, 128, 128, 0.108);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--card-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 25px;
+}
+
 * {
   margin: 0;
   padding: 0;

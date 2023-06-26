@@ -18,6 +18,14 @@ const dataProjects = [
     description: 'Fiz este timer para um pequeno desafio da Trybe, onde poderiamos fazer nossos timers que seriam usados durante os intervalos das aulas. Durante o desenvolvimento decidi que usaria o timer também para estudar com o método pomodoro.',
     usedSkills: ['javascript', 'react'],
   },
+  {
+    projectName: 'Pomodoro Timer',
+    deployLink: 'https://vitorgaia.github.io/pomodoro-timer/',
+    repositoryLink: 'https://github.com/vitorGaia/pomodoro-timer',
+    thumbNail: pomodoroTimerThumb,
+    description: 'Fiz este timer para um pequeno desafio da Trybe, onde poderiamos fazer nossos timers que seriam usados durante os intervalos das aulas. Durante o desenvolvimento decidi que usaria o timer também para estudar com o método pomodoro.',
+    usedSkills: ['javascript', 'react'],
+  },
 ];
 
 export default dataProjects;

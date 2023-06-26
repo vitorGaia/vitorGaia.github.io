@@ -28,3 +28,9 @@
   background-color: var(--accent);
   color: var(--base);
 }
+
+@media (min-width: 1001px) {
+  .home-btns-container {
+    gap: 2rem;
+  }
+}
