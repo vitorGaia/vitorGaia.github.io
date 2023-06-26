@@ -3,6 +3,7 @@ import ReactIconCloud from '../Components/ReactIconCloud';
 import AppContext from '../Contexts/AppContext';
 import ScrollReveal from 'scrollreveal';
 import '../Styles/Skills.css';
+import Header from '../Components/Header';
 
 function Skills() {
   const { toSkills, setToSkills, scrollToElement } = useContext(AppContext);
@@ -28,6 +29,7 @@ function Skills() {
 
   return (
     <div className='skills-page-container area-2-skills' id='skills' ref={skills}>
+      <Header />
       <div className='skills-infos-container'>
         <h2>Habilidades Técnicas</h2>
 

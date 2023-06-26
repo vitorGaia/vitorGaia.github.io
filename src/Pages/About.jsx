@@ -3,6 +3,7 @@ import TimeLine from '../Components/TimeLine';
 import ScrollReveal from 'scrollreveal';
 import '../Styles/About.css';
 import AppContext from '../Contexts/AppContext';
+import Header from '../Components/Header';
 
 function About() {
 
@@ -29,6 +30,8 @@ function About() {
 
   return (
     <div className="about-page-container area-3-about" id='about' ref={about}>
+      <Header />
+      
       <div className='about-titles-container'>
         <h2>Sobre Mim</h2>
 

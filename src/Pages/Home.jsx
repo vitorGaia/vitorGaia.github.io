@@ -23,10 +23,10 @@ function Home() {
 
   return (
     <>
-    <main className='home-page-container' id='home-section'>
+    <main className='home-page-container area-1-home' id='home'>
       <Header />
 
-      <div className='home-page-content-container area-1-home'>
+      <div className='home-page-content-container'>
 
         <div className='h1-container'>
           <ContactsBar position='absolute' />
@@ -50,7 +50,7 @@ function Home() {
 
     <About />
 
-    <BackToStartBtn id="#home-section" />
+    <BackToStartBtn id='home' />
     </>
   );
 }
