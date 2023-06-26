@@ -3,6 +3,7 @@ import Header from '../Components/Header';
 import ScrollReveal from 'scrollreveal';
 import '../Styles/Contacts.css';
 import { useEffect } from 'react';
+import contactsBackground from '../Images/contactsBackground.gif';
 
 function Contacts() {
   useEffect(() => {
@@ -19,9 +20,11 @@ function Contacts() {
   return (
     <div className='contacts-page-container area-5-contacts'>
       <Header />
-      
-      <h2>Contatos</h2>
-      <p>Vamos trabalhar juntos?</p>
+      <div className='contacts-titles-container'>
+        <h2>Contatos</h2>
+        <p>Vamos trabalhar juntos?</p>
+        <img src={ contactsBackground } />
+      </div>
 
       <div className='show-contact-card'>
         <ContactsBar position='unset'/>
