@@ -44,6 +44,9 @@
   padding: 0.5rem;
   color: var(--font);
   font-weight: 300;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .menu-icon {
@@ -89,5 +92,25 @@
 
   .menu-icon, .close-menu-icon {
     display: none;
+  }
+
+  .header-container nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: width 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(-50%);
+  }
+  
+  .header-container nav a:hover {
+    color: var(--accent);
+  }
+  
+  .header-container nav a:hover::after {
+    width: 100%;
   }
 }
