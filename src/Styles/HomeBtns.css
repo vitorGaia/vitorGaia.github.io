@@ -72,4 +72,8 @@
     gap: 2rem;
     letter-spacing: 1px;
   }
+
+  .home-btns-container a {
+    font-size: 1.3rem;
+  }
 }

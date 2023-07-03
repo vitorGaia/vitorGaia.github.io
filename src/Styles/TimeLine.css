@@ -98,7 +98,7 @@
 }
 
 .content > h2 {
-  font-size: 1.1rem !important;
+  font-size: 0.9rem !important;
   color: var(--accent);
   display: flex;
   justify-content: center;

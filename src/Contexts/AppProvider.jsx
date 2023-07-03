@@ -9,6 +9,12 @@ function AppProvider(props) {
   const [toSkills, setToSkills] = useState(false);
   const [toAbout, setToAbout] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [formValues, setFormValues] = useState({
+    nome: '',
+    email: '',
+    assunto: '',
+    mensagem: ''
+  });
 
   const redirectTo = (path) => {
     if (path === 'skills') {
@@ -49,6 +55,8 @@ function AppProvider(props) {
     redirectTo,
     scrollToElement,
     screenWidth,
+    formValues,
+    setFormValues,
   };
 
   return (
