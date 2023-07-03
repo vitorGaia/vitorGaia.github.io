@@ -22,6 +22,30 @@
   text-decoration: none;
   color: var(--accent);
   font-weight: 600;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.home-btns-container a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--accent);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.home-btns-container a:hover::before {
+  width: 100%;
+}
+
+.home-btns-container a:hover {
+  color: var(--base);
+  z-index: 2;
 }
 
 .home-btns-container > :nth-child(2) {
@@ -29,8 +53,23 @@
   color: var(--base);
 }
 
+.home-btns-container > :nth-child(2)::before {
+  background: var(--accent);
+}
+
+.home-btns-container > :nth-child(2):hover::before {
+  background-color: var(--base);
+  color: var(--accent);
+}
+
+.home-btns-container :nth-child(2):hover {
+  color: var(--accent);
+  z-index: 2;
+}
+
 @media (min-width: 1001px) {
   .home-btns-container {
     gap: 2rem;
+    letter-spacing: 1px;
   }
 }

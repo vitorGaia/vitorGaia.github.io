@@ -23,8 +23,8 @@ function Home() {
 
   return (
     <>
+    <Header />
     <main className='home-page-container area-1-home' id='home'>
-      <Header />
 
       <div className='home-page-content-container'>
 

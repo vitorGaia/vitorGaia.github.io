@@ -1,28 +1,54 @@
 .contacts-bar {
-  /* border: solid 1px var(--accent); */
   width: 164px;
-  height: 54px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-  /* position: absolute; */
   right: 6%;
   top: 10%;
+  gap: 0.5rem;
 }
 
-.contacts-bar i {
+.contacts-bar a {
+  text-decoration: none;
   border: solid 1px var(--accent);
   background-color: transparent;
   border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.3rem;
   font-size: 2rem;
   font-weight: 500;
   color: var(--accent);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
-/* .contacts-bar > :nth-child(1) {
-  background-color: var(--accent);
+.contacts-bar a:hover {
   color: var(--base);
-  border: none;
-} */
+}
+
+.contacts-bar a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--accent);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.contacts-bar a:hover::before{
+  width: 100%;
+}
+
+.contacts-bar i {
+  border-bottom: unset;
+}

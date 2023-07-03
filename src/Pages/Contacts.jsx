@@ -18,42 +18,44 @@ function Contacts() {
   }, []);
 
   return (
-    <div className='contacts-page-container area-5-contacts'>
+    <>
       <Header />
-      <div className='contacts-titles-container'>
-        <h2>Contatos</h2>
-        <p>Vamos trabalhar juntos?</p>
-        <img src={ contactsBackground } />
-      </div>
+      <div className='contacts-page-container area-5-contacts'>
+        <div className='contacts-titles-container'>
+          <h2>Contatos</h2>
+          <p>Vamos trabalhar juntos?</p>
+          <img src={ contactsBackground } />
+        </div>
 
-      <div className='show-contact-card'>
-        <ContactsBar position='unset'/>
+        <div className='show-contact-card'>
+          <ContactsBar position='unset'/>
 
-        <form className='contact-form'>
-          <div>
+          <form className='contact-form'>
+            <div>
+              <input
+                type='text'
+                placeholder='Nome'
+              />
+              <input
+                type='email'
+                placeholder='Email'
+              />
+            </div>
+            
             <input
               type='text'
-              placeholder='Nome'
+              placeholder='Assunto'
             />
-            <input
-              type='email'
-              placeholder='Email'
+            <textarea
+              type='text'
+              placeholder='Mensagem'
             />
-          </div>
-          
-          <input
-            type='text'
-            placeholder='Assunto'
-          />
-          <textarea
-            type='text'
-            placeholder='Mensagem'
-          />
 
-          <button type='button'>Enviar</button>
-        </form>
+            <button type='button'>Enviar</button>
+          </form>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

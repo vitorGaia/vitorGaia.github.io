@@ -18,9 +18,14 @@ function CardProject({ project }) {
           <i className='bx bxl-github redirect-link'></i>
         </Link>
 
-        <Link to={deployLink} target="_blank">
-          <i className='bx bx-link-external redirect-link'></i>
-        </Link>
+        {
+          deployLink !== 'no public'
+          && (
+            <Link to={deployLink} target="_blank">
+              <i className='bx bx-link-external redirect-link'></i>
+            </Link>
+          )
+        }
       </div>
 
       <p><span>Descrição:</span> {description}</p>

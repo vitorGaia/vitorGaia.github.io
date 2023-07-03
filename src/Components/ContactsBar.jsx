@@ -14,7 +14,7 @@ function ContactsBar({ position }) {
       </a>
 
       <a href='https://api.whatsapp.com/send?phone=5541998271561' target="_blank" rel="noreferrer">
-      <i className='bx bxl-whatsapp'></i>
+        <i className='bx bxl-whatsapp'></i>
       </a>
     
       <a href="https://www.linkedin.com/in/vitor-gaia-dev/" target="_blank" rel="noreferrer">

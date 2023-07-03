@@ -124,10 +124,6 @@
     left: 47%;
   }
 
-  /* .container {
-    background-color: aquamarine;
-  } */
-
   .container::after {
     right: -29.5%;
   }
@@ -146,5 +142,9 @@
 
   .right::before {
     left: -15%;
+  }
+
+  .content > h2 {
+    font-size: 1.5rem !important;
   }
 }

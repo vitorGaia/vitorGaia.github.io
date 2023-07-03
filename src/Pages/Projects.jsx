@@ -20,21 +20,23 @@ function Projects() {
   }, []);
 
   return (
-    <div className='projects-page-container area-4-projects' id='projects'>
+    <>
       <Header />
+      <div className='projects-page-container area-4-projects' id='projects'>
 
-      <h2>Meus Projetos</h2>
+        <h2>Meus Projetos</h2>
 
-      <p>Aqui exponho meus principais projetos acadêmicos e pessoais, que estão disponíveis no GitHub.</p>
+        <p>Aqui exponho meus principais projetos acadêmicos e pessoais, que estão disponíveis no GitHub.</p>
 
-      <HomeBtns hubOrProjects='gitHub' />
+        <HomeBtns hubOrProjects='gitHub' />
 
-      <div className='show-project-cards'>
-        { dataProjects.map((project, index) => <CardProject key={`${project}${index}`} project={project} />) }
+        <div className='show-project-cards'>
+          { dataProjects.map((project, index) => <CardProject key={`${project}${index}`} project={project} />) }
+        </div>
+
+        <BackToStartBtn id='projects' />
       </div>
-
-      <BackToStartBtn id='projects' />
-    </div>
+    </>
   );
 }
 

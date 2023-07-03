@@ -3,7 +3,6 @@ import TimeLine from '../Components/TimeLine';
 import ScrollReveal from 'scrollreveal';
 import '../Styles/About.css';
 import AppContext from '../Contexts/AppContext';
-import Header from '../Components/Header';
 
 function About() {
 
@@ -30,12 +29,11 @@ function About() {
 
   return (
     <div className="about-page-container area-3-about" id='about' ref={about}>
-      <Header />
-      
+
       <div className='about-titles-container'>
         <h2>Sobre Mim</h2>
 
-        <p>Estou em transição de carreira. Motivado pela minha paixão por tecnologia, desejo de adquirir novas habilidades/conhecimentos e a busca por uma carreira com maior potencial de crescimento e estabilidade financeira. Estou adquirindo novas habilidades através de cursos, treinamentos e estudos autônomos. Embora seja um desafio, estou determinado(a) a alcançar meus objetivos e construir uma carreira gratificante na área de tecnologia.</p>
+        <p>Estou em transição de carreira. Motivado pela minha paixão por tecnologia, desejo de adquirir novas habilidades/conhecimentos e a busca por uma carreira com maior potencial de crescimento e estabilidade financeira. Estou adquirindo novas habilidades através de cursos, treinamentos e estudos autônomos. Embora seja um desafio, estou determinado a alcançar meus objetivos e construir uma carreira gratificante na área de tecnologia.</p>
       </div>
 
       <TimeLine />
