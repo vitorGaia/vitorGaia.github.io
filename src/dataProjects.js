@@ -13,8 +13,8 @@ const dataProjects = [
   },
   {
     projectName: 'Store Manager API',
-    deployLink: 'no public',
-    repositoryLink: 'https://github.com/vitorGaia/store_manager_API',
+    deployLink: 'no deployed',
+    repositoryLink: 'https://github.com/vitorGaia/store-manager-API',
     thumbNail: storeManagerAPI,
     description: 'Com a utilização do banco de dados MySQL, pude criar, visualizar, deletar e atualizar produtos e vendas. Além disso, destaco a implementação de testes para garantir a qualidade das funcionalidades desenvolvidas',
     usedSkills: ['javascript', 'nodejs', 'docker'],

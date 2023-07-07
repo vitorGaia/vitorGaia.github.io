@@ -64,3 +64,9 @@
 .tecs-icon {
   font-size: 1.5rem;
 }
+
+@media (min-width: 1001px) {
+  .redirect-link {
+    font-size: 2rem;
+  }
+}

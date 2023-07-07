@@ -19,7 +19,7 @@ function CardProject({ project }) {
         </Link>
 
         {
-          deployLink !== 'no public'
+          deployLink !== 'no deployed'
           && (
             <Link to={deployLink} target="_blank">
               <i className='bx bx-link-external redirect-link'></i>
