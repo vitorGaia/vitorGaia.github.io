@@ -30,8 +30,10 @@ function ReactIconCloud() {
     'express',
     'mocha',
     'chai',
-    'typescript',
-    'nodedotjs'
+    // 'typescript',
+    'nodedotjs',
+    'nextdotjs',
+    'tailwindcss',
   ];
 
   const iconTags = iconSlugs.map((slug) => ({
