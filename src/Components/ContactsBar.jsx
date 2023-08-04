@@ -13,12 +13,16 @@ function ContactsBar({ position }) {
         <i className='bx bx-envelope'></i>
       </a>
 
-      <a href='https://api.whatsapp.com/send?phone=5541998271561' target="_blank" rel="noreferrer">
+      <a href='https://api.whatsapp.com/send?phone=5591981807116' target="_blank" rel="noreferrer">
         <i className='bx bxl-whatsapp'></i>
       </a>
     
       <a href="https://www.linkedin.com/in/vitor-gaia-dev/" target="_blank" rel="noreferrer">
         <i className='bx bxl-linkedin' ></i>
+      </a>
+
+      <a href="https://github.com/vitorGaia" target="_blank" rel="noreferrer">
+        <i className='bx bxl-github'></i>
       </a>
     </div>
   );
