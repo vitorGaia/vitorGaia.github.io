@@ -36,7 +36,7 @@ function Home() {
           <h2>Desenvolvedor Full Stack Web</h2>
         </div>
 
-        <p>Tenho 25 anos, moro em Belém PA, estudo engenharia de Software na Unifatecie e desenvolvimento web na Trybe.</p>
+        <p>Seja bem vindo ao meu potfólio, aqui você verá meus pricipais projetos e tecnologias. Tenho 25 anos, moro em Belém PA, estudo engenharia de Software na Unifatecie e desenvolvimento web na Trybe.</p>
 
         <HomeBtns hubOrProjects='projects' />
       </div>

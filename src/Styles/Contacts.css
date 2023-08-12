@@ -133,6 +133,7 @@
 
   .contact-form {
     margin: unset;
+    padding: 1rem 2.5rem;
   }
 
   .contact-form div > input {

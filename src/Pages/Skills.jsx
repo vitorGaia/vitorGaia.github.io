@@ -31,7 +31,7 @@ function Skills() {
       <div className='skills-infos-container'>
         <h2>Habilidades Técnicas</h2>
 
-        <p>Desenvolvimento inteligente de aplicações web robustas e auto-gerenciáveis. Crio soluções personalizadas e escaláveis para atender às suas necessidades específicas, com expertise técnica e práticas de desenvolvimento de ponta.</p>
+        <p>Desenvolvimento inteligente de aplicações web robustas e auto-gerenciáveis. Crio soluções personalizadas e escaláveis para atender às suas necessidades específicas, com expertise técnica e práticas de desenvolvimento de ponta.<br/><br/> Atualmente minhas principais skills são <span>JavaScript</span>, <span>React</span>, <span>Jest</span>, <span>Node</span>, <span>MySQL</span> e estou adquirindo proficiência com <span>TypeScript</span>. Na nuvem de ícones você pode ver tecnologias secundárias e bibliotecas que eu já usei.</p>
       </div>
 
       <ReactIconCloud />

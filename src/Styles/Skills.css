@@ -29,6 +29,10 @@
   padding: 0.5rem;
 }
 
+.skills-infos-container span {
+  color: var(--accent);
+}
+
 .whats-icon {
   font-size: 10rem;
 }

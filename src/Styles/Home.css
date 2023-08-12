@@ -18,7 +18,7 @@
 }
 
 .home-page-content-container p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
   padding: 1.5rem;
 }
@@ -33,7 +33,7 @@
 }
 
 .h1-container h1 {
-  font-size: 1rem;
+  font-size: 1.9rem;
   font-weight: 600;
 }
 
@@ -45,7 +45,8 @@
 
 .h1-container h2 {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
 }
 
 .area-1-home {
@@ -77,7 +78,6 @@
 
   .h1-container {
     height: unset;
-    gap: 2rem;
   }
 
   .h1-container h1 {
@@ -102,6 +102,6 @@
   }
 
   .home-page-content-container p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }

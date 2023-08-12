@@ -12,9 +12,8 @@
 
 .contacts-bar a {
   text-decoration: none;
-  border: solid 1px var(--accent);
-  background-color: transparent;
   border-radius: 50%;
+  border: solid 1px var(--accent);
   height: 100%;
   width: 100%;
   display: flex;
@@ -22,7 +21,6 @@
   align-items: center;
   padding: 0.3rem;
   font-size: 2rem;
-  font-weight: 500;
   color: var(--accent);
   position: relative;
   z-index: 1;
@@ -51,4 +49,10 @@
 
 .contacts-bar i {
   border-bottom: unset;
+}
+
+@media (min-width: 1001px) {
+  .contacts-bar a {
+    font-size: 2.1rem;
+  }
 }
