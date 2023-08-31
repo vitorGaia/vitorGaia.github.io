@@ -4,8 +4,17 @@ import storeManagerAPIThumb from './Images/storeManagerAPIThumb.jpg';
 import trybeWalletThumb from './Images/trybeWalletThumb.jpg';
 import onlineStoreThumb from './Images/onlineStoreThumb.jpg';
 import blogsAPIThumb from './Images/blogsAPIThumb.jpg';
+import tfcThumb from './Images/tfcThumb.png';
 
 const dataProjects = [
+  {
+    projectName: 'Trybe Futebol Clube',
+    deployLink: 'no deployed',
+    repositoryLink: 'https://github.com/vitorGaia/trybe-futebol-clube',
+    thumbNail: tfcThumb,
+    description: 'Site informativo dedicado a fornecer atualizações sobre partidas e classificações de futebol. Através da implementação de uma API, adotei a abordagem TDD para testes e integrei todas as partes do projeto via docker-compose.',
+    usedSkills: ['typescript', 'react', 'nodejs', 'docker', 'css3'],
+  },
   {
     projectName: 'Online Store',
     deployLink: 'https://gaia-online-store.vercel.app/',
