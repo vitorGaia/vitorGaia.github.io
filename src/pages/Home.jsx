@@ -1,10 +1,10 @@
-import Header from '../Components/Header';
-import HomeBtns from '../Components/HomeBtns';
+import Header from '../components/Header';
+import HomeBtns from '../components/HomeBtns';
 import Skills from './Skills';
 import '../Styles/Home.css';
-import About from './About';
-import BackToStartBtn from '../Components/BackToStartBtn';
-import ContactsBar from '../Components/ContactsBar';
+import About from './about';
+import BackToStartBtn from '../components/BackToStartBtn';
+import ContactsBar from '../components/ContactsBar';
 import ScrollReveal from 'scrollreveal';
 import { useEffect } from 'react';
 import homeBackground from '../Images/homeBackground.gif';

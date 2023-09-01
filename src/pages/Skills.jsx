@@ -1,5 +1,5 @@
 import { useContext, useEffect, useRef } from 'react';
-import ReactIconCloud from '../Components/ReactIconCloud';
+import ReactIconCloud from '../components/ReactIconCloud';
 import AppContext from '../Contexts/AppContext';
 import ScrollReveal from 'scrollreveal';
 import '../Styles/Skills.css';

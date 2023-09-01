@@ -1,5 +1,5 @@
-import ContactsBar from '../Components/ContactsBar';
-import Header from '../Components/Header';
+import ContactsBar from '../components/ContactsBar';
+import Header from '../components/Header';
 import ScrollReveal from 'scrollreveal';
 import '../Styles/Contacts.css';
 import { useContext, useEffect, useState } from 'react';

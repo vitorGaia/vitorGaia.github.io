@@ -1,4 +1,4 @@
-import ContactsBar from '../Components/ContactsBar';
+import ContactsBar from '../components/ContactsBar';
 import PropTypes from 'prop-types';
 import ScrollReveal from 'scrollreveal';
 import '../Styles/BackToStartBtn.css';

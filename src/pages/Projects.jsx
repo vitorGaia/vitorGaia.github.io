@@ -1,9 +1,9 @@
-import Header from '../Components/Header';
-import HomeBtns from '../Components/HomeBtns';
+import Header from '../components/Header';
+import HomeBtns from '../components/HomeBtns';
 import dataProjects from '../dataProjects';
-import CardProject from '../Components/CardProject';
+import CardProject from '../components/CardProject';
 import '../Styles/Projects.css';
-import BackToStartBtn from '../Components/BackToStartBtn';
+import BackToStartBtn from '../components/BackToStartBtn';
 import ScrollReveal from 'scrollreveal';
 import { useEffect } from 'react';
 
