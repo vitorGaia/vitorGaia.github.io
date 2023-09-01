@@ -10,7 +10,7 @@ Neste hub você encontrará meus principais projetos publicados e repositórios.
 - Vite
 - CSS3
 
-## ▶️ [Deploy da Aplicação](https://code.visualstudio.com/)
+## ▶️ [Deploy da Aplicação](https://vitorgaia.github.io/#)
 <div align="center">
   <img
     src='src/images/portfolioThumb.png'
