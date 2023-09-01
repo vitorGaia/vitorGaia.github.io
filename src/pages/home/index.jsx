@@ -1,13 +1,13 @@
-import Header from '../components/Header';
-import HomeBtns from '../components/HomeBtns';
-import Skills from './Skills';
-import '../Styles/Home.css';
-import About from './about';
-import BackToStartBtn from '../components/BackToStartBtn';
-import ContactsBar from '../components/ContactsBar';
-import ScrollReveal from 'scrollreveal';
 import { useEffect } from 'react';
-import homeBackground from '../Images/homeBackground.gif';
+import ScrollReveal from 'scrollreveal';
+import Skills from '../skills';
+import About from '../about';
+import Header from '../../components/header';
+import HomeBtns from '../../components/homeButtons';
+import BackToStartBtn from '../../components/backToStartBarr';
+import ContactsBar from '../../components/contactsBarr';
+import homeBackground from '../../images/homeBackground.gif';
+import './styles.css';
 
 function Home() {
   useEffect(() => {

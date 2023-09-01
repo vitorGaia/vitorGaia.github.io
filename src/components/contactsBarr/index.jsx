@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import '../Styles/ContactsBar.css';
 import { useContext } from 'react';
-import AppContext from '../Contexts/AppContext';
+import AppContext from '../../contexts/AppContext';
+import './styles.css';
 
 function ContactsBar({ position }) {
   const { navigate } = useContext(AppContext);

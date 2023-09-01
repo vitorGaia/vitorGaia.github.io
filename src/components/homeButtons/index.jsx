@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
-import '../Styles/HomeBtns.css';
+import './styles.css';
 
 function HomeBtns(props) {
   const { hubOrProjects } = props;

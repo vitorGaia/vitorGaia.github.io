@@ -1,7 +1,7 @@
-import allIcons from 'simple-icons';
 import { v4 } from 'uuid';
 import { IconCloud } from 'react-icon-cloud';
-import '../Styles/ReactIconCloud.css';
+import allIcons from 'simple-icons';
+import './styles.css';
 
 function ReactIconCloud() {
   const tagCanvasOptions = {

@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router';
 import ScrollReveal from 'scrollreveal';
-import Home from './pages/Home';
-import Projects from '../src/pages/Projects';
-import Contacts from './pages/Contacts';
+import Home from './pages/home';
+import Projects from './pages/projects';
+import Contacts from './pages/contacts';
 
 function App() {
   window.sr = ScrollReveal({ reset: true });

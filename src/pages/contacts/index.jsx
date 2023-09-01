@@ -1,10 +1,10 @@
-import ContactsBar from '../components/ContactsBar';
-import Header from '../components/Header';
+import ContactsBar from '../../components/contactsBarr';
+import Header from '../../components/header';
 import ScrollReveal from 'scrollreveal';
-import '../Styles/Contacts.css';
+import './styles.css';
 import { useContext, useEffect, useState } from 'react';
-import contactsBackground from '../Images/contactsBackground.gif';
-import AppContext from '../Contexts/AppContext';
+import contactsBackground from '../../images/contactsBackground.gif';
+import AppContext from '../../contexts/AppContext';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert';
 

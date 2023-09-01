@@ -1,11 +1,11 @@
-import Header from '../components/Header';
-import HomeBtns from '../components/HomeBtns';
-import dataProjects from '../dataProjects';
-import CardProject from '../components/CardProject';
-import '../Styles/Projects.css';
-import BackToStartBtn from '../components/BackToStartBtn';
-import ScrollReveal from 'scrollreveal';
 import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
+import Header from '../../components/header';
+import HomeBtns from '../../components/homeButtons';
+import CardProject from '../../components/projectCard';
+import BackToStartBtn from '../../components/backToStartBarr';
+import dataProjects from '../../database';
+import './styles.css';
 
 function Projects() {
   useEffect(() => {

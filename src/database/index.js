@@ -1,10 +1,10 @@
-import trybeTunesThumb from './Images/trybeTunesThumb.jpg';
-import pomodoroTimerThumb from './Images/pomodoroTimerThumb.jpg';
-import storeManagerAPIThumb from './Images/storeManagerAPIThumb.jpg';
-import trybeWalletThumb from './Images/trybeWalletThumb.jpg';
-import onlineStoreThumb from './Images/onlineStoreThumb.jpg';
-import blogsAPIThumb from './Images/blogsAPIThumb.jpg';
-import tfcThumb from './Images/tfcThumb.png';
+import trybeTunesThumb from '../images/trybeTunesThumb.jpg';
+import pomodoroTimerThumb from '../images/pomodoroTimerThumb.jpg';
+import storeManagerAPIThumb from '../images/storeManagerAPIThumb.jpg';
+import trybeWalletThumb from '../images/trybeWalletThumb.jpg';
+import onlineStoreThumb from '../images/onlineStoreThumb.jpg';
+import blogsAPIThumb from '../images/blogsAPIThumb.jpg';
+import tfcThumb from '../images/tfcThumb.png';
 
 const dataProjects = [
   {

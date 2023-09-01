@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef } from 'react';
 import ScrollReveal from 'scrollreveal';
-import AppContext from '../../Contexts/AppContext';
-import TimeLine from '../../components/timeLine/TimeLine';
+import AppContext from '../../contexts/AppContext';
+import TimeLine from '../../components/timeLine';
 import './styles.css';
 
 function About() {

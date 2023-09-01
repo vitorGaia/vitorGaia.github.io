@@ -1,8 +1,8 @@
 import { useContext, useEffect, useRef } from 'react';
-import ReactIconCloud from '../components/ReactIconCloud';
-import AppContext from '../Contexts/AppContext';
 import ScrollReveal from 'scrollreveal';
-import '../Styles/Skills.css';
+import ReactIconCloud from '../../components/iconCloud';
+import AppContext from '../../contexts/AppContext';
+import './styles.css';
 
 function Skills() {
   const { toSkills, setToSkills, scrollToElement } = useContext(AppContext);

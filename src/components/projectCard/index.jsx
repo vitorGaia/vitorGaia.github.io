@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import '../Styles/CardProject.css';
 import { Link } from 'react-router-dom';
+import './styles.css';
 
 function CardProject({ project }) {
   const { projectName, deployLink, repositoryLink, thumbNail, description, usedSkills } = project;

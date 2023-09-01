@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
-import '../Styles/Header.css';
-import AppContext from '../Contexts/AppContext';
 import { Link } from 'react-router-dom';
+import AppContext from '../../contexts/AppContext';
+import './styles.css';
 
 function Header() {
   const { navigate, redirectTo, screenWidth } = useContext(AppContext);

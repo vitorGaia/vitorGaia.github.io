@@ -1,9 +1,9 @@
-import ContactsBar from '../components/ContactsBar';
+import ContactsBar from '../contactsBarr';
 import PropTypes from 'prop-types';
 import ScrollReveal from 'scrollreveal';
-import '../Styles/BackToStartBtn.css';
+import './styles.css';
 import { useContext, useEffect } from 'react';
-import AppContext from '../Contexts/AppContext';
+import AppContext from '../../contexts/AppContext';
 
 function BackToStartBtn({ id }) {
   const { redirectTo } = useContext(AppContext);
