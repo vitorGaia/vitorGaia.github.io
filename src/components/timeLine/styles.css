@@ -1,37 +1,32 @@
 .time-line-container {
   width: 100%;
-  max-width: 700px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem;
-  overflow: auto;
-  position: relative;
-  margin: 1rem;
 }
 
-/* barra central */
-.time-line-container::after {
-  content: '';
-  position: absolute;
+.time-line-container > span {
   width: 3px;
+  height: 100%;
   background-color: var(--font);
   border-radius: 5px;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-}
-
-/* cards */
-.container {
-  background-color: var(--card-color);
-  padding: 0.5rem;
   position: relative;
-  width: 41%;
-  border-radius: 4px;
 }
 
-/* bolinhas */
+.container {
+  position: absolute;
+  background-color: var(--card-color);
+  border-radius: 4px;
+  width: 130px;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: center;
+}
+
 .container::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: var(--base);
   width: 0.8rem;
@@ -42,20 +37,20 @@
   top: 0;
 }
 
-/* posição dos cards */
 .left {
-  left: 0;
-}
-.right {
-  left: 11.4rem;
+  left: 1.5rem;
+  top: 9rem;
 }
 
-/* posição das bolinhas */
+.right {
+  right: 1.5rem;
+}
+
 .left::after {
-  left: 9.2rem;
+  left: -2rem;
 }
 .right::after {
-  left: -2.2rem;
+  right: -2rem;
 }
 
 .content {
@@ -98,18 +93,26 @@
     left: 47%;
   }
 
+  .container {
+    width: 250px;
+  }
+
   .left::after {
-    left: 17.6rem;
+    left: -2.45rem;
     top: 0.5rem;
   }
 
   .right::after {
-    left: -3.9rem;
+    right: -2.45rem;
     top: 0.5rem;
   }
 
+  .left {
+    left: 2rem;
+  }
+
   .right {
-    left: 21.5rem;
+    right: 2rem;
   }
 
   .content > h2 {
