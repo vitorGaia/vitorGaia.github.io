@@ -1,4 +1,4 @@
-# Seja bem-vindo ao meu portfólio!
+# 🧩 Seja bem-vindo ao meu portfólio!
 
 ## 📘 Sobre
 Neste hub você encontrará meus principais projetos publicados e repositórios. Se for do seu interesse fique de olho aqui pois sempre estou adicionando novos projetos.
